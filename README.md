@@ -19,22 +19,30 @@ This project builds a two-track ML system:
 ## Project Structure
 
 ```
-student_stress_predictor/
+student-stress-predictor/
 ├── data/
-│   ├── raw/                  # Original CSV from Google Form
-│   └── processed/            # Cleaned & split datasets
+│   ├── raw/                          # Original datasets
+│   │   ├── StressLevelDataset_dirty_og.csv
+│   │   └── StressLevelDataset_dirty.csv
+│   └── processed/                    # Cleaned datasets
+│       ├── StressLevelDataset_cleaned.csv
+│       └── after_eda.csv
 ├── notebooks/
-│   ├── 01_EDA.ipynb          # Exploratory data analysis
-│   ├── 02_preprocessing.ipynb # Data cleaning pipeline
-│   ├── 03_supervised.ipynb   # Classifier training (4 models)
-│   ├── 04_unsupervised.ipynb # K-Means + PCA
-│   └── 05_comparison.ipynb   # Results comparison
-├── models/                   # Saved ML models (.pkl files)
-├── api/                      # FastAPI backend
-├── frontend/                 # Dashboard UI
-├── report/                   # Final project report
-├── requirements.txt
-├── .gitignore
+│   ├── EDA.ipynb                     # Exploratory data analysis
+│   └── main.ipynb                    # Main analysis & model training
+├── models/                           # Saved ML models (.pkl files)
+├── api/                              # FastAPI backend
+│   ├── main.py                       # API endpoints
+│   ├── predictor.py                  # ML prediction logic
+│   ├── schemas.py                    # Data validation schemas
+│   └── __pycache__/
+├── frontend/                         # Dashboard UI
+│   ├── index.html                    # Main page
+│   ├── app.js                        # Frontend logic
+│   └── style.css                     # Styling
+├── report/                           # Final project report
+├── requirements.txt                  # Python dependencies
+├── PRD.md                            # Product requirements document
 └── README.md
 ```
 
