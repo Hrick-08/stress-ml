@@ -49,7 +49,7 @@ student-stress-predictor/
 │   ├── predictor.py                  # ML prediction logic & composite scores
 │   ├── schemas.py                    # Pydantic input/output schemas
 │   └── __pycache__/
-├── frontend/                         # Dashboard UI (vanilla JS)
+├── ui/                         # Dashboard UI (vanilla JS)
 │   ├── index.html                    # Main dashboard
 │   ├── app.js                        # Tabs, forms, charts, API calls
 │   └── style.css                     # Responsive styling
