@@ -82,11 +82,11 @@ The API will be available at `http://localhost:8001`.
 
 ### 4. Access the Dashboard
 
-Open `frontend/index.html` in your browser, or serve via HTTP:
+Open `ui/index.html` in your browser, or serve via HTTP:
 
 ```bash
 # Using Python's built-in server (run from project root)
-python -m http.server 8080 --directory frontend
+python -m http.server 8080 --directory ui
 ```
 
 Navigate to `http://localhost:8080`.
