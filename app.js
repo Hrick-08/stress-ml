@@ -3,8 +3,8 @@
  * Handles tab navigation, model comparison, and live prediction
  */
 
-const API_BASE = "https://student-stress-analysis-and-academic.onrender.com";
-// const API_BASE = "http://localhost:8001";
+// const API_BASE = "https://student-stress-analysis-and-academic.onrender.com";
+const API_BASE = "http://localhost:8001";
 
 // Safely joins API_BASE + path, preventing double slashes
 function apiUrl(path) {
